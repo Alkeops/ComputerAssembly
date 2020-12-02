@@ -1,0 +1,70 @@
+.menu {
+  &__boton {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    transition: 1s;
+    span {
+      position: relative;
+      display: block;
+      width: 25px;
+      height: 5px;
+      margin-top: 5px;
+      background: black;
+      transition: transform 0.5s, background 1.5s;
+      &:nth-child(2) {
+        transition: 1.3s;
+        width: 3px;
+      }
+    }
+  }
+  &__boton-active {
+    z-index: 99;
+    transform: rotate(90deg);
+    transform-origin: center center;
+    span {
+      background: white;
+      height: 4px;
+      &:first-child {
+        transform: rotate(-25deg) translate(-10px, 10px);
+      }
+      &:nth-child(2) {
+        width: 25px;
+        transform: translate(4px, 10px) rotate(65deg);
+      }
+      &:last-child {
+        width: 30px;
+        transform: rotate(10deg);
+      }
+    }
+  }
+  .cerrar {
+    position: absolute;
+    color: white;
+    z-index: 99;
+    font-size: 9px;
+    margin-top: -5px;
+  }
+  &__navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    margin: -2vw;
+    top: 0;
+    left: -2000px;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    transition: 1.5s;
+    p {
+      font-size: 25px;
+      font-weight: bolder;
+    }
+  }
+  &__navegacion-active {
+    left: 0;
+  }
+}
