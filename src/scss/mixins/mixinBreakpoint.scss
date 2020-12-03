@@ -1,0 +1,24 @@
+$breakpoints: (
+  "M": (
+    min-width: 767px
+  ),
+  "L": (
+    min-width: 992px
+  ),
+  "XL": (
+    min-width: 1200px
+  ),
+  "XLL": (
+    min-width: 1500px
+  )
+) !default;
+
+@mixin media($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @warn "No available breakpoint";
+  }
+}
