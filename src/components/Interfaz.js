@@ -5,8 +5,10 @@ import Social from "./Social";
 const Interfaz = () => {
   useEffect(() => {
     const int = document.querySelector(".interfaz");
-    let vh = window.innerHeight * 0.01;
-    int.style.setProperty("--vh", `${vh}px`);
+    window.addEventListener("resize", () => {
+      let vh = window.innerHeight * 0.01;
+      int.style.setProperty("--vh", `${vh}px`);
+    });
   }, []);
   return (
     <div className="interfaz">

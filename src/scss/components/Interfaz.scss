@@ -8,6 +8,7 @@
   align-items: flex-start;
   justify-content: space-between;
   @include media("M") {
+    margin: 2vw;
     height: calc(100vh - 4vw);
   }
   .social {
