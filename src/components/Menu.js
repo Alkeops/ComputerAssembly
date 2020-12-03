@@ -1,21 +1,21 @@
 import { useState } from "react";
 
 const Menu = () => {
-  const [abierto, setAbierto] = useState(false);
+  const [active, setActive] = useState(false);
   return (
     <div className="menu">
       <div
-        className={!abierto ? "menu__boton" : "menu__boton menu__boton-active"}
-        onClick={() => setAbierto(!abierto)}
+        className={!active ? "menu__boton" : "menu__boton menu__boton-active"}
+        onClick={() => setActive(!active)}
       >
         <span></span>
         <span></span>
         <span></span>
       </div>
-      {abierto && <p className="cerrar">CERRAR</p>}
+      {active && <p className="cerrar">CERRAR</p>}
       <nav
         className={
-          !abierto
+          !active
             ? "menu__navegacion"
             : "menu__navegacion menu__navegacion-active"
         }

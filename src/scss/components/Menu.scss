@@ -1,3 +1,4 @@
+@import "../mixins/mixinBreakpoint.scss";
 .menu {
   &__boton {
     position: relative;
@@ -51,7 +52,7 @@
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    margin: -2vw;
+    margin: -2vw -3vw;
     top: 0;
     left: -2000px;
     color: white;
@@ -59,12 +60,15 @@
     height: 100vh;
     background: black;
     transition: 1.5s;
+    &-active{
+    	left: 0;
+    }
+    @include media("M") {
+      margin: -2vw;
+    }
     p {
       font-size: 25px;
       font-weight: bolder;
     }
-  }
-  &__navegacion-active {
-    left: 0;
   }
 }
