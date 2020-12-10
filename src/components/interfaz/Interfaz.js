@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Menu from "./Menu";
 import Social from "./Social";
-import Carrito from "./Carrito";
+import Carrito from "./carrito/Carrito";
 const Interfaz = () => {
   useEffect(() => {
     const int = document.querySelector(".interfaz");

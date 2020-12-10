@@ -1,6 +1,8 @@
 //INICIALIZACION
 @import "./generales/generales.scss";
 //COMPONENTES
+/* Commons */
+@import "./components/common.scss";
 /* Interfaz */
 @import "./components/Interfaz.scss";
 @import "./components/Menu.scss";

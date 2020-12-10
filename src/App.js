@@ -1,4 +1,4 @@
-import Interfaz from "./components/Interfaz";
+import Interfaz from "./components/interfaz/Interfaz";
 
 function App() {
   return <Interfaz />;

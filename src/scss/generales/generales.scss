@@ -4,6 +4,7 @@ $fuente: "Open Sans", sans-serif;
 
 html {
   font-family: $fuente;
+  min-width: 100%;
   box-sizing: border-box;
 }
 *,
