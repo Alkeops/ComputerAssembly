@@ -35,3 +35,16 @@
     margin-bottom: 5px;
   }
 }
+.button{
+  background: none;
+  border: 2px solid transparent;
+  font-weight: 500;
+  padding: 15px 15px;
+  border-radius: 5px;
+  border-color: black;
+  &:hover {
+    border-color: white;
+    color: white;
+    background: black;
+  }
+}

@@ -1,31 +1,20 @@
 @import "../mixins/mixinBreakpoint.scss";
-.interfaz {
+.logo {
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding: 2vw 3vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  @include media("L") {
-    padding: 2vw;
+  top: 20px;
+  left: 20px;
+}
+.social {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  svg {
+    margin-right: 20px;
   }
-  &__footer {
-    width: 94vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    .social {
-      display: flex;
-      align-items: center;
-      svg {
-        margin-left: 10px;
-        &:first-child {
-          margin-left: 0;
-        }
-      }
-    }
-  }
+}
+.logo,
+.carrito,
+.social,
+.menu {
+  z-index: 99;
 }

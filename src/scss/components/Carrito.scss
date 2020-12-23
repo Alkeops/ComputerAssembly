@@ -1,8 +1,11 @@
 @import "../mixins/mixinBreakpoint.scss";
 .carrito {
-  position: relative;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   display: flex;
   align-items: flex-end;
+
   &__info {
     display: flex;
     flex-direction: column;

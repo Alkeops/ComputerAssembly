@@ -1,0 +1,75 @@
+.producto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto auto;
+  z-index: -1;
+  padding: 80px 45px;
+  text-align: center;
+  .categoria {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 200;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .foto {
+    margin-right: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    margin: 30px 0;
+    img {
+      object-fit: cover;
+      height: auto;
+      width: 100%;
+    }
+  }
+  .contenedor {
+    padding: 20px;
+    .datos {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      .precio {
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-weight: lighter;
+        span {
+          font-size: 20px;
+        }
+      }
+      .likes {
+        display: flex;
+        justify-content: center;
+        h3 {
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+  .full-specs {
+    h1 {
+      font-weight: lighter;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    position: fixed;
+    background: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .button {
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+}
