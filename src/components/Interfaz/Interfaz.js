@@ -2,7 +2,8 @@ import Menu from "./Menu";
 import Social from "./Social";
 import Carrito from "./Carrito/Carrito";
 import { Link } from "react-router-dom";
-const Interfaz = ({ children }) => {
+
+const Interfaz = () => {
   return (
     <>
       <Link className="logo" to="/">

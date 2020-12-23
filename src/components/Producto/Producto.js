@@ -3,15 +3,17 @@ import { GrLike } from "react-icons/gr";
 import product from "../../product";
 import FullSpecs from "./FullSpecs";
 
-const Producto = () => {
+const Producto = ({ match }) => {
+  const { id, categoria } = match.params;
   const [datos, setDatos] = useState({});
   const [abierto, setAbierto] = useState(false);
   useEffect(() => {
     product.then((res) => {
-      setDatos(res);
+      const producto = res.find((prod) => prod.id === id);
+      setDatos(producto);
     });
-  }, [setDatos]);
-  let { categoria, nombre, meGusta, precio, vendidos } = datos;
+  }, [id]);
+  let { nombre, meGusta, precio, vendidos } = datos;
   const handleCerrar = () => setAbierto(!abierto);
   return (
     <div className="producto">

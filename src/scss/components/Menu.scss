@@ -7,6 +7,7 @@
     width: 40px;
     height: 30px;
     transition: 1s;
+    z-index: 99;
     cursor: pointer;
     span {
       position: relative;
@@ -47,7 +48,8 @@
     color: white;
     z-index: 99;
     font-size: 9px;
-    margin-top: -5px;
+    top: 53%;
+    left: 20px;
   }
   &__navegacion {
     display: flex;
@@ -63,6 +65,9 @@
     height: 100%;
     background: black;
     transition: 1.5s;
+    a {
+      color: white;
+    }
     &-active {
       left: 0;
     }

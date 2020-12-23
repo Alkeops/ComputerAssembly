@@ -41,7 +41,7 @@
     transform: scaleY(0);
     transform-origin: bottom;
     transition: 0.3s;
-    z-index: 1;
+    z-index: -1;
     padding: 12px 12px 20px;
     @include media("L") {
       transform: scaleY(1);
